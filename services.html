@@ -3,100 +3,141 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Daftar layanan UltraCompany untuk branding, website perusahaan, dan komunikasi digital korporat.">
-  <title>Layanan UltraCompany</title>
+  <meta name="description" content="Daftar layanan Cloudly untuk rental compute, storage, dan database terkelola dengan aktivasi cepat.">
+  <title>Layanan Cloudly</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="backdrop backdrop-a" aria-hidden="true"></div>
-  <div class="backdrop backdrop-b" aria-hidden="true"></div>
+<body class="min-h-screen bg-slate-50 font-body text-slate-900 antialiased">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-cyan-200/60 blur-3xl"></div>
+    <div class="pointer-events-none absolute left-0 top-64 h-80 w-80 rounded-full bg-amber-200/50 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-sky-200/50 blur-3xl"></div>
 
-  <header class="topbar section-shell">
-    <a class="brand" href="index.html" aria-label="UltraCompany beranda">
-      <span class="brand-mark">U</span>
-      <span class="brand-text">UltraCompany</span>
-    </a>
-    <nav class="nav" aria-label="Navigasi utama">
-      <a href="index.html">Beranda</a>
-      <a href="about.html">Tentang</a>
-      <a href="services.html">Layanan</a>
-      <a href="contact.html">Kontak</a>
-    </nav>
-  </header>
+    <header class="mx-auto mt-6 flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-full border border-slate-200/70 bg-white/80 px-4 py-3 shadow-sm backdrop-blur">
+      <a class="flex items-center gap-3 font-display text-lg font-semibold" href="index.html" aria-label="Cloudly beranda">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600 text-white">☁️</span>
+        Cloudly
+      </a>
+      <nav class="flex flex-wrap items-center gap-2 text-sm font-semibold text-slate-600" aria-label="Navigasi utama">
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="index.html">Beranda</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="about.html">Tentang</a>
+        <a class="rounded-full bg-slate-900 px-3 py-2 text-white" href="services.html">Layanan</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="contact.html">Kontak</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="section-shell page-hero page-hero-grid">
-      <div class="page-hero-copy reveal">
-        <span class="eyebrow">Layanan</span>
-        <h1>Solusi yang dirancang untuk kebutuhan promosi perusahaan.</h1>
-        <p>
-          Kami menyediakan layanan yang fokus pada tampilan profesional, konten yang jelas, dan struktur digital yang mudah dikembangkan.
-        </p>
+    <main class="relative z-10">
+      <section class="mx-auto max-w-6xl px-6 pt-16 pb-14 lg:grid lg:grid-cols-12 lg:items-start lg:gap-10">
+        <div class="lg:col-span-7">
+          <span class="inline-flex items-center gap-2 rounded-full border border-cyan-200/80 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Layanan</span>
+          <h1 class="mt-6 font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">Paket rental cloud yang siap untuk berbagai skala bisnis.</h1>
+          <p class="mt-6 text-lg text-slate-600">Kami menyiapkan layanan infrastruktur cloud yang modular. Anda dapat memilih compute, storage, atau database terkelola sesuai kebutuhan proyek.</p>
+        </div>
+        <aside class="mt-10 lg:col-span-5 lg:mt-0">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="font-display text-xl font-semibold text-slate-900">Deliverable Utama</h2>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600">
+              <li><span class="font-semibold text-slate-900">Compute:</span> Instans siap pakai dengan pilihan CPU dan RAM.</li>
+              <li><span class="font-semibold text-slate-900">Storage:</span> SSD cepat dengan snapshot otomatis.</li>
+              <li><span class="font-semibold text-slate-900">Database:</span> MySQL, Postgres, dan Redis terkelola.</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-12">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-display text-3xl font-semibold text-slate-900">Layanan utama Cloudly.</h2>
+          <p class="mt-4 text-base text-slate-600">Setiap paket dilengkapi monitoring, backup, dan akses tim support lokal.</p>
+        </div>
+        <div class="mt-10 grid gap-6 lg:grid-cols-3">
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Compute Rental</h3>
+            <p class="mt-3 text-sm text-slate-600">Instans untuk aplikasi web, API, hingga worker data.</p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li>Skala CPU dan RAM fleksibel</li>
+              <li>Load balancer opsional</li>
+              <li>Auto restart dan monitoring</li>
+            </ul>
+          </article>
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Storage Rental</h3>
+            <p class="mt-3 text-sm text-slate-600">Penyimpanan aman untuk file, aset media, atau backup aplikasi.</p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li>SSD cepat dengan IOPS tinggi</li>
+              <li>Snapshot otomatis</li>
+              <li>Enkripsi default</li>
+            </ul>
+          </article>
+          <article class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Database Managed</h3>
+            <p class="mt-3 text-sm text-slate-600">Database yang dikelola penuh dengan replikasi dan failover.</p>
+            <ul class="mt-4 space-y-2 text-sm text-slate-600">
+              <li>MySQL, Postgres, Redis</li>
+              <li>Backup harian</li>
+              <li>Monitoring query</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-12">
+        <div class="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm">
+          <div class="mx-auto max-w-3xl text-center">
+            <h2 class="font-display text-3xl font-semibold text-slate-900">Layanan tambahan untuk tim Anda.</h2>
+            <p class="mt-4 text-base text-slate-600">Tambahkan modul sesuai kebutuhan keamanan dan performa.</p>
+          </div>
+          <div class="mt-10 grid gap-6 md:grid-cols-3">
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-display text-lg font-semibold text-slate-900">Managed Security</h3>
+              <p class="mt-2 text-sm text-slate-600">Firewall, WAF, dan audit keamanan berkala.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-display text-lg font-semibold text-slate-900">Observability</h3>
+              <p class="mt-2 text-sm text-slate-600">Dashboard metrik, alert, dan tracing aplikasi.</p>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-5">
+              <h3 class="font-display text-lg font-semibold text-slate-900">Migration Assist</h3>
+              <p class="mt-2 text-sm text-slate-600">Bantuan migrasi dari on premise atau cloud lain.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="rounded-3xl border border-slate-200 bg-slate-900 px-8 py-12 text-white shadow-xl sm:px-12">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <h2 class="font-display text-3xl font-semibold">Butuh paket khusus?</h2>
+              <p class="mt-3 text-sm text-slate-200">Kirim kebutuhan teknis Anda, kami siapkan arsitektur dan estimasi.</p>
+            </div>
+            <a class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-100" href="contact.html">Hubungi Sales</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="relative z-10 border-t border-slate-200/80 bg-white/80">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-sm text-slate-600">
+        <p>Untuk diskusi kebutuhan layanan, kunjungi halaman kontak.</p>
+        <span>2026</span>
       </div>
-
-      <aside class="page-panel reveal">
-        <h3>Deliverable Utama</h3>
-        <ul class="detail-list">
-          <li><strong>Brand system</strong> Nama, pesan, visual, dan tone komunikasi</li>
-          <li><strong>Website statis</strong> Halaman cepat, ringan, dan responsif</li>
-          <li><strong>Materi promosi</strong> Copy dan layout yang siap dipakai</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="section-shell page-section">
-      <span class="eyebrow reveal">Ruang Lingkup</span>
-      <h2 class="reveal">Setiap layanan dibuat agar perusahaan tampil lebih meyakinkan dan siap dipresentasikan.</h2>
-      <div class="service-detail-grid">
-        <article class="service-detail reveal">
-          <h3>Brand Strategy</h3>
-          <p>Menetapkan arah pesan, segmentasi audiens, dan karakter merek yang lebih konsisten.</p>
-        </article>
-        <article class="service-detail reveal">
-          <h3>Company Website</h3>
-          <p>Membangun landing page atau company profile yang bersih dan mudah diakses di semua perangkat.</p>
-        </article>
-        <article class="service-detail reveal">
-          <h3>Lead Generation</h3>
-          <p>Menata jalur konversi agar calon pelanggan lebih cepat menemukan kontak dan penawaran utama.</p>
-        </article>
-        <article class="service-detail reveal">
-          <h3>Content Production</h3>
-          <p>Menyusun copy, susunan konten, dan visual dasar yang mendukung kejelasan komunikasi perusahaan.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell page-section">
-      <span class="eyebrow reveal">Paket Kerja</span>
-      <h2 class="reveal">Alur yang ringkas agar proses tetap efisien dan mudah dikontrol.</h2>
-      <div class="process-grid">
-        <article class="process-step reveal">
-          <h3>Brief</h3>
-          <p>Diskusi kebutuhan dan target hasil yang ingin dicapai.</p>
-        </article>
-        <article class="process-step reveal">
-          <h3>Draft</h3>
-          <p>Penyusunan struktur, copy, dan arahan visual awal.</p>
-        </article>
-        <article class="process-step reveal">
-          <h3>Review</h3>
-          <p>Penyesuaian berdasarkan masukan tim Anda.</p>
-        </article>
-        <article class="process-step reveal">
-          <h3>Handover</h3>
-          <p>Hasil akhir disiapkan untuk dipakai atau dipublikasikan.</p>
-        </article>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer section-shell">
-    <p>Untuk diskusi kebutuhan layanan, kunjungi halaman <a href="contact.html">kontak</a>.</p>
-    <span>2026</span>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>

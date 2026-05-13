@@ -3,80 +3,139 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Hubungi UltraCompany untuk diskusi kebutuhan website perusahaan, branding, dan komunikasi digital.">
-  <title>Kontak UltraCompany</title>
+  <meta name="description" content="Hubungi Cloudly untuk diskusi kebutuhan rental layanan cloud dan rekomendasi paket.">
+  <title>Kontak Cloudly</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="backdrop backdrop-a" aria-hidden="true"></div>
-  <div class="backdrop backdrop-b" aria-hidden="true"></div>
+<body class="min-h-screen bg-slate-50 font-body text-slate-900 antialiased">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-cyan-200/60 blur-3xl"></div>
+    <div class="pointer-events-none absolute left-0 top-64 h-80 w-80 rounded-full bg-amber-200/50 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-sky-200/50 blur-3xl"></div>
 
-  <header class="topbar section-shell">
-    <a class="brand" href="index.html" aria-label="UltraCompany beranda">
-      <span class="brand-mark">U</span>
-      <span class="brand-text">UltraCompany</span>
-    </a>
-    <nav class="nav" aria-label="Navigasi utama">
-      <a href="index.html">Beranda</a>
-      <a href="about.html">Tentang</a>
-      <a href="services.html">Layanan</a>
-      <a href="contact.html">Kontak</a>
-    </nav>
-  </header>
+    <header class="mx-auto mt-6 flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-full border border-slate-200/70 bg-white/80 px-4 py-3 shadow-sm backdrop-blur">
+      <a class="flex items-center gap-3 font-display text-lg font-semibold" href="index.html" aria-label="Cloudly beranda">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600 text-white">☁️</span>
+        Cloudly
+      </a>
+      <nav class="flex flex-wrap items-center gap-2 text-sm font-semibold text-slate-600" aria-label="Navigasi utama">
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="index.html">Beranda</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="about.html">Tentang</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="services.html">Layanan</a>
+        <a class="rounded-full bg-slate-900 px-3 py-2 text-white" href="contact.html">Kontak</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="section-shell page-hero page-hero-grid">
-      <div class="page-hero-copy reveal">
-        <span class="eyebrow">Kontak</span>
-        <h1>Siap diskusi kebutuhan halaman perusahaan Anda.</h1>
-        <p>
-          Kirim detail singkat tentang kebutuhan website, branding, atau materi promosi, dan kami akan bantu menyiapkan langkah berikutnya.
-        </p>
-        <div class="link-row">
-          <a class="btn btn-primary" href="mailto:hello@ultracompany.id">hello@ultracompany.id</a>
-          <a class="btn btn-secondary" href="services.html">Lihat Layanan</a>
+    <main class="relative z-10">
+      <section class="mx-auto max-w-6xl px-6 pt-16 pb-14 lg:grid lg:grid-cols-12 lg:items-start lg:gap-10">
+        <div class="lg:col-span-7">
+          <span class="inline-flex items-center gap-2 rounded-full border border-cyan-200/80 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Kontak</span>
+          <h1 class="mt-6 font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl">Diskusikan kebutuhan cloud Anda dengan tim kami.</h1>
+          <p class="mt-6 text-lg text-slate-600">Kirim ringkasan kebutuhan, target performa, dan estimasi budget. Kami akan menyiapkan paket rental yang sesuai.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="rounded-full bg-cyan-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-500" href="mailto:hello@Cloudly.id">hello@Cloudly.id</a>
+            <a class="rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-400" href="services.html">Lihat Layanan</a>
+          </div>
         </div>
-      </div>
+        <aside class="mt-10 lg:col-span-5 lg:mt-0">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <h2 class="font-display text-xl font-semibold text-slate-900">Detail Kontak</h2>
+            <ul class="mt-4 space-y-3 text-sm text-slate-600">
+              <li><span class="font-semibold text-slate-900">Email:</span> hello@Cloudly.id</li>
+              <li><span class="font-semibold text-slate-900">Telepon:</span> +62 21 555 0130</li>
+              <li><span class="font-semibold text-slate-900">Jam kerja:</span> Senin - Jumat, 09:00 - 18:00</li>
+              <li><span class="font-semibold text-slate-900">Lokasi:</span> Jakarta, Indonesia</li>
+            </ul>
+          </div>
+        </aside>
+      </section>
 
-      <aside class="page-panel reveal">
-        <h3>Detail Kontak</h3>
-        <ul class="contact-list">
-          <li><strong>Email</strong> hello@ultracompany.id</li>
-          <li><strong>Waktu respons</strong> Senin–Jumat, 09.00–17.00</li>
-          <li><strong>Jenis proyek</strong> Company profile, branding, dan landing page promosi</li>
-        </ul>
-      </aside>
-    </section>
-
-    <section class="section-shell page-section contact-grid">
-      <div class="contact-card reveal">
-        <span class="eyebrow">Informasi Kerja</span>
-        <h2>Format permintaan yang paling membantu kami memulai.</h2>
-        <ul class="detail-list">
-          <li><strong>Nama perusahaan</strong> Untuk penyesuaian komunikasi dan visual</li>
-          <li><strong>Tujuan utama</strong> Branding, penawaran, presentasi, atau promosi</li>
-          <li><strong>Target waktu</strong> Agar alur kerja bisa dijadwalkan dengan rapi</li>
-        </ul>
-      </div>
-
-      <div class="contact-card reveal">
-        <span class="eyebrow">Langkah Berikutnya</span>
-        <h2>Anda bisa langsung mengirim email atau kembali ke beranda.</h2>
-        <p class="page-intro">Jika ingin melihat gambaran umum dulu, buka halaman beranda atau halaman layanan kami.</p>
-        <div class="link-row">
-          <a class="btn btn-primary" href="index.html">Kembali ke Beranda</a>
-          <a class="btn btn-secondary" href="about.html">Tentang Perusahaan</a>
+      <section class="mx-auto max-w-6xl px-6 py-12">
+        <div class="grid gap-8 lg:grid-cols-5">
+          <div class="lg:col-span-2">
+            <h2 class="font-display text-2xl font-semibold text-slate-900">Informasi yang kami butuhkan</h2>
+            <p class="mt-4 text-sm text-slate-600">Semakin lengkap detail yang Anda kirim, semakin cepat kami menyiapkan rekomendasi paket.</p>
+            <ul class="mt-6 space-y-3 text-sm text-slate-600">
+              <li><span class="font-semibold text-slate-900">Jenis aplikasi:</span> Web, API, data, atau layanan internal.</li>
+              <li><span class="font-semibold text-slate-900">Target trafik:</span> Perkiraan pengguna atau request per hari.</li>
+              <li><span class="font-semibold text-slate-900">Kebutuhan SLA:</span> Standar uptime dan backup.</li>
+            </ul>
+          </div>
+          <div class="lg:col-span-3">
+            <form class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm" action="#" method="post">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="text-sm font-semibold text-slate-700" for="name">Nama</label>
+                  <input class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-2 text-sm focus:border-cyan-500 focus:outline-none" id="name" name="name" type="text" placeholder="Nama Anda" required>
+                </div>
+                <div>
+                  <label class="text-sm font-semibold text-slate-700" for="company">Perusahaan</label>
+                  <input class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-2 text-sm focus:border-cyan-500 focus:outline-none" id="company" name="company" type="text" placeholder="Nama perusahaan">
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="text-sm font-semibold text-slate-700" for="email">Email</label>
+                  <input class="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-2 text-sm focus:border-cyan-500 focus:outline-none" id="email" name="email" type="email" placeholder="nama@perusahaan.com" required>
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="text-sm font-semibold text-slate-700" for="message">Kebutuhan cloud</label>
+                  <textarea class="mt-2 h-28 w-full rounded-2xl border border-slate-200 px-4 py-2 text-sm focus:border-cyan-500 focus:outline-none" id="message" name="message" placeholder="Ceritakan kebutuhan compute, storage, dan timeline." required></textarea>
+                </div>
+              </div>
+              <button class="mt-6 w-full rounded-full bg-cyan-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-500" type="submit">Kirim Permintaan</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
 
-  <footer class="footer section-shell">
-    <p>UltraCompany. Kontak awal yang ringkas untuk kebutuhan perusahaan yang lebih profesional.</p>
-    <span>2026</span>
-  </footer>
+      <section class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="font-display text-3xl font-semibold text-slate-900">Tim Kami</h2>
+          <p class="mt-4 text-base text-slate-600">Kelompok Cloudly</p>
+        </div>
+        <ul class="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3" role="list">
+          <li class="rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-slate-200">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-900 text-lg font-semibold text-white">ARF</div>
+            <h3 class="mt-6 font-display text-lg font-semibold text-slate-900">Arfan Andhika Pramudya</h3>
+            <p class="text-sm text-slate-600">VPS &amp; Infrastruktur</p>
+            <p class="mt-3 text-sm text-slate-500">DNS &amp; VestaCP</p>
+          </li>
+          <li class="rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-slate-200">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-900 text-lg font-semibold text-white">AQ</div>
+            <h3 class="mt-6 font-display text-lg font-semibold text-slate-900">Aqsha Fadhilah Jailani</h3>
+            <p class="text-sm text-slate-600">Web Developer</p>
+            <p class="mt-3 text-sm text-slate-500">Apache &amp; PHP &amp; Web Server</p>
+          </li>
+          <li class="rounded-3xl bg-white p-6 text-center shadow-sm ring-1 ring-slate-200">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-slate-900 text-lg font-semibold text-white">ZA</div>
+            <h3 class="mt-6 font-display text-lg font-semibold text-slate-900">Zahra Aulia Nafisa</h3>
+            <p class="text-sm text-slate-600">Database Engineer</p>
+            <p class="mt-3 text-sm text-slate-500">MySQL &amp; Database</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="relative z-10 border-t border-slate-200/80 bg-white/80">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-sm text-slate-600">
+        <p>Cloudly. Tim siap membantu kebutuhan rental cloud Anda.</p>
+        <span>2026</span>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
