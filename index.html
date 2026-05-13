@@ -3,124 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="UltraCompany membantu perusahaan membangun citra digital yang profesional, konsisten, dan siap berkembang.">
-  <title>UltraCompany | Solusi Korporat untuk Pertumbuhan Digital</title>
+  <meta name="description" content="Cloudly menyediakan layanan cloud rental untuk compute, storage, dan database terkelola dengan aktivasi cepat.">
+  <title>Cloudly | Rental Layanan Cloud untuk Bisnis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <div class="backdrop backdrop-a" aria-hidden="true"></div>
-  <div class="backdrop backdrop-b" aria-hidden="true"></div>
+<body class="min-h-screen bg-slate-50 font-body text-slate-900 antialiased">
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-cyan-200/60 blur-3xl"></div>
+    <div class="pointer-events-none absolute left-0 top-64 h-80 w-80 rounded-full bg-amber-200/50 blur-3xl"></div>
+    <div class="pointer-events-none absolute bottom-0 right-1/4 h-72 w-72 rounded-full bg-sky-200/50 blur-3xl"></div>
 
-  <header class="topbar section-shell">
-    <a class="brand" href="index.html" aria-label="UltraCompany beranda">
-      <span class="brand-mark">U</span>
-      <span class="brand-text">UltraCompany</span>
-    </a>
+    <header class="mx-auto mt-6 flex max-w-6xl flex-wrap items-center justify-between gap-4 rounded-full border border-slate-200/70 bg-white/80 px-4 py-3 shadow-sm backdrop-blur">
+      <a class="flex items-center gap-3 font-display text-lg font-semibold" href="index.html" aria-label="Cloudly beranda">
+        <span class="flex h-10 w-10 items-center justify-center rounded-full bg-cyan-600 text-white">☁️</span>
+        Cloudly
+      </a>
+      <nav class="flex flex-wrap items-center gap-2 text-sm font-semibold text-slate-600" aria-label="Navigasi utama">
+        <a class="rounded-full bg-slate-900 px-3 py-2 text-white" href="index.html">Beranda</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="about.html">Tentang</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="services.html">Layanan</a>
+        <a class="rounded-full px-3 py-2 transition hover:bg-slate-100" href="contact.html">Kontak</a>
+      </nav>
+    </header>
 
-    <nav class="nav" aria-label="Navigasi utama">
-      <a href="index.html">Beranda</a>
-      <a href="about.html">Tentang</a>
-      <a href="services.html">Layanan</a>
-      <a href="contact.html">Kontak</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section-shell page-hero page-hero-grid">
-      <div class="page-hero-copy reveal">
-        <span class="eyebrow">Solusi Korporat</span>
-        <h1>Bangun citra perusahaan yang lebih tegas, rapi, dan dipercaya pasar.</h1>
-        <p>
-          UltraCompany merancang identitas digital, halaman promosi, dan materi komunikasi perusahaan yang konsisten agar tim Anda tampil lebih profesional di setiap titik sentuh.
-        </p>
-        <div class="link-row">
-          <a class="btn btn-primary" href="services.html">Lihat Layanan</a>
-          <a class="btn btn-secondary" href="contact.html">Hubungi Tim</a>
-        </div>
-      </div>
-
-      <aside class="page-panel reveal" aria-label="Ringkasan perusahaan">
-        <h3>Ringkasan Singkat</h3>
-        <p class="page-intro">Fokus kami adalah membantu perusahaan tampil konsisten, kredibel, dan mudah dipahami oleh calon klien maupun mitra bisnis.</p>
-        <div class="stat-grid">
-          <div class="stat-card">
-            <strong>120+</strong>
-            <span>Proyek selesai</span>
+    <main class="relative z-10">
+      <section class="mx-auto max-w-6xl px-6 pt-16 pb-20 lg:grid lg:grid-cols-12 lg:items-center lg:gap-12">
+        <div class="lg:col-span-7">
+          <span class="inline-flex items-center gap-2 rounded-full border border-cyan-200/80 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Cloud Rental</span>
+          <h1 class="mt-6 font-display text-4xl font-semibold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">Sewa layanan cloud yang siap dipakai dalam hitungan menit.</h1>
+          <p class="mt-6 text-lg text-slate-600">Cloudly memberi akses komputasi, storage, dan database terkelola tanpa kontrak panjang. Pilih paket, aktifkan instans, lalu fokus ke produk Anda.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="rounded-full bg-cyan-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-500" href="services.html">Lihat Paket</a>
+            <a class="rounded-full border border-slate-300 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-slate-400" href="contact.html">Konsultasi Gratis</a>
           </div>
-          <div class="stat-card">
-            <strong>15+</strong>
-            <span>Industri terlayani</span>
+          <dl class="mt-10 grid grid-cols-2 gap-6 text-sm text-slate-600 sm:grid-cols-4">
+            <div>
+              <dt class="font-semibold text-slate-900">Aktivasi 5 menit</dt>
+              <dd>Instans langsung online</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-900">SLA 99.95%</dt>
+              <dd>Uptime terjaga</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-900">Support 24/7</dt>
+              <dd>Tim lokal siaga</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-slate-900">Region Asia</dt>
+              <dd>Latensi rendah</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="relative mt-12 lg:col-span-5 lg:mt-0">
+          <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-xl">
+            <div class="flex items-center justify-between">
+              <span class="text-sm font-semibold text-cyan-700">Status Cluster</span>
+              <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-semibold text-emerald-700">Normal</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Region Jakarta + Singapore aktif, replikasi otomatis, dan monitoring real time.</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Ruang server cloud" class="mt-6 h-64 w-full rounded-2xl object-cover">
+            <div class="mt-6 grid grid-cols-2 gap-4 text-xs text-slate-600">
+              <div class="rounded-2xl bg-slate-50 p-3">
+                <p class="font-semibold text-slate-900">Bandwidth</p>
+                <p>Unlimited inbound</p>
+              </div>
+              <div class="rounded-2xl bg-slate-50 p-3">
+                <p class="font-semibold text-slate-900">Backup</p>
+                <p>Harian otomatis</p>
+              </div>
+            </div>
           </div>
-          <div class="stat-card">
-            <strong>38%</strong>
-            <span>Kenaikan lead rata-rata</span>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-16">
+        <div class="mx-auto max-w-2xl text-center">
+          <h2 class="font-display text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">Semua kebutuhan cloud dalam satu panel.</h2>
+          <p class="mt-4 text-base text-slate-600">Mulai dari compute, storage, hingga database terkelola, semuanya disiapkan agar tim Anda bisa bergerak lebih cepat.</p>
+        </div>
+        <dl class="mt-12 grid gap-6 md:grid-cols-3">
+          <div class="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-600 text-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="h-6 w-6">
+                <path d="M3.75 12h16.5M6.75 8.25h10.5M6.75 15.75h10.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <dt class="mt-5 text-lg font-semibold text-slate-900">Compute fleksibel</dt>
+            <dd class="mt-2 text-sm text-slate-600">Atur CPU dan RAM sesuai beban kerja, bisa scale naik turun kapan pun.</dd>
+          </div>
+          <div class="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-500 text-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="h-6 w-6">
+                <path d="M4.5 12.75h15m-15 4.5h15m-15-9h15" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <dt class="mt-5 text-lg font-semibold text-slate-900">Storage aman</dt>
+            <dd class="mt-2 text-sm text-slate-600">Snapshot otomatis, enkripsi default, dan pilihan kelas storage hemat biaya.</dd>
+          </div>
+          <div class="flex flex-col rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+            <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500 text-white">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" class="h-6 w-6">
+                <path d="M12 6v12m6-6H6" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <dt class="mt-5 text-lg font-semibold text-slate-900">Database terkelola</dt>
+            <dd class="mt-2 text-sm text-slate-600">MySQL, Postgres, dan Redis siap pakai dengan failover otomatis.</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-16">
+        <div class="rounded-3xl border border-slate-200 bg-white p-10 shadow-sm">
+          <div class="text-center">
+            <h2 class="font-display text-3xl font-semibold text-slate-900 sm:text-4xl">Dipercaya tim produk yang tumbuh cepat.</h2>
+            <p class="mt-4 text-base text-slate-600">Kami memantau performa dan keamanan agar tim Anda fokus pada roadmap.</p>
+          </div>
+          <dl class="mt-10 grid grid-cols-1 gap-4 text-center sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-2xl bg-slate-50 p-6">
+              <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Instans aktif</dt>
+              <dd class="mt-3 text-3xl font-semibold text-slate-900">1.2K+</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-6">
+              <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Uptime bulanan</dt>
+              <dd class="mt-3 text-3xl font-semibold text-slate-900">99.95%</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-6">
+              <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Region aktif</dt>
+              <dd class="mt-3 text-3xl font-semibold text-slate-900">6</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-6">
+              <dt class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">Response support</dt>
+              <dd class="mt-3 text-3xl font-semibold text-slate-900">15 menit</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-6xl px-6 py-16">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="font-display text-3xl font-semibold text-slate-900 sm:text-4xl">Pilih paket rental sesuai skala kerja.</h2>
+          <p class="mt-4 text-base text-slate-600">Harga transparan, tanpa biaya setup, dan bisa upgrade kapan pun.</p>
+        </div>
+        <div class="mt-12 grid gap-6 lg:grid-cols-3">
+          <div class="flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900">Starter</h3>
+              <p class="mt-2 text-sm text-slate-600">Untuk MVP, landing page, dan aplikasi ringan.</p>
+              <p class="mt-6 text-4xl font-semibold text-slate-900">Rp 249k<span class="text-sm font-semibold text-slate-500">/bulan</span></p>
+              <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                <li>2 vCPU, 4 GB RAM</li>
+                <li>80 GB SSD</li>
+                <li>Backup mingguan</li>
+                <li>Support bisnis</li>
+              </ul>
+            </div>
+            <a class="mt-8 rounded-full border border-slate-300 px-4 py-2 text-center text-sm font-semibold text-slate-700 transition hover:border-slate-400" href="contact.html">Mulai Starter</a>
+          </div>
+          <div class="flex flex-col justify-between rounded-3xl border border-cyan-200 bg-white p-8 shadow-lg">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="text-lg font-semibold text-slate-900">Growth</h3>
+                <span class="rounded-full bg-cyan-100 px-3 py-1 text-xs font-semibold text-cyan-700">Favorit</span>
+              </div>
+              <p class="mt-2 text-sm text-slate-600">Untuk aplikasi bisnis yang mulai ramai pengguna.</p>
+              <p class="mt-6 text-4xl font-semibold text-slate-900">Rp 699k<span class="text-sm font-semibold text-slate-500">/bulan</span></p>
+              <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                <li>6 vCPU, 16 GB RAM</li>
+                <li>250 GB SSD</li>
+                <li>Backup harian</li>
+                <li>Support prioritas</li>
+              </ul>
+            </div>
+            <a class="mt-8 rounded-full bg-cyan-600 px-4 py-2 text-center text-sm font-semibold text-white shadow-sm transition hover:bg-cyan-500" href="contact.html">Mulai Growth</a>
+          </div>
+          <div class="flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-8 shadow-sm">
+            <div>
+              <h3 class="text-lg font-semibold text-slate-900">Scale</h3>
+              <p class="mt-2 text-sm text-slate-600">Untuk platform kritikal dan kebutuhan enterprise.</p>
+              <p class="mt-6 text-4xl font-semibold text-slate-900">Custom</p>
+              <ul class="mt-6 space-y-3 text-sm text-slate-600">
+                <li>Resource dedicated</li>
+                <li>Multi region aktif</li>
+                <li>Backup per jam</li>
+                <li>Account manager</li>
+              </ul>
+            </div>
+            <a class="mt-8 rounded-full border border-slate-300 px-4 py-2 text-center text-sm font-semibold text-slate-700 transition hover:border-slate-400" href="contact.html">Konsultasi Scale</a>
           </div>
         </div>
-      </aside>
-    </section>
+      </section>
 
-    <section class="section-shell page-section">
-      <span class="eyebrow reveal">Apa yang Kami Kerjakan</span>
-      <h2 class="reveal">Pendekatan yang sederhana, formal, dan fokus pada hasil yang bisa dijelaskan.</h2>
-      <div class="service-detail-grid">
-        <article class="service-detail reveal">
-          <h3>Brand dan positioning</h3>
-          <p>Merumuskan arah pesan, diferensiasi, dan tampilan visual agar perusahaan lebih mudah dikenali.</p>
-        </article>
-        <article class="service-detail reveal">
-          <h3>Website perusahaan</h3>
-          <p>Membangun website statis yang cepat, ringan, dan siap dipakai untuk promosi maupun presentasi bisnis.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-shell page-section">
-      <span class="eyebrow reveal">Keunggulan</span>
-      <h2 class="reveal">Tampilan lebih formal, alur informasi lebih jelas, dan struktur yang siap dikembangkan.</h2>
-      <div class="value-grid">
-        <div class="value-card reveal">
-          <h3>Visual yang tenang</h3>
-          <p>Dirancang tanpa elemen berlebihan agar kesan perusahaan tetap profesional.</p>
+      <section class="mx-auto max-w-6xl px-6 pb-20">
+        <div class="rounded-3xl border border-slate-200 bg-slate-900 px-8 py-12 text-white shadow-xl sm:px-12">
+          <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+            <div>
+              <h2 class="font-display text-3xl font-semibold">Mulai sewa cloud tanpa proses rumit.</h2>
+              <p class="mt-3 text-sm text-slate-200">Kirim kebutuhan Anda, kami siapkan rekomendasi paket dan estimasi biaya.</p>
+            </div>
+            <a class="rounded-full bg-white px-5 py-2.5 text-sm font-semibold text-slate-900 transition hover:bg-slate-100" href="contact.html">Jadwalkan Demo</a>
+          </div>
         </div>
-        <div class="value-card reveal">
-          <h3>Bahasa yang ringkas</h3>
-          <p>Konten ditulis dengan nada yang jelas sehingga lebih mudah dipindai dan dipahami.</p>
-        </div>
-        <div class="value-card reveal">
-          <h3>Siap dipakai untuk deploy</h3>
-          <p>Struktur file sederhana dan statis, mudah dipindahkan ke hosting apa pun.</p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="section-shell page-section contact-grid">
-      <div class="contact-card reveal">
-        <span class="eyebrow">Portofolio Singkat</span>
-        <h2>Contoh hasil yang menekankan kepercayaan dan konsistensi visual.</h2>
-        <ul class="bullet-list">
-          <li><strong>Rebranding distribusi</strong> Penyegaran identitas dan halaman promosi untuk memperkuat citra perusahaan.</li>
-          <li><strong>Website korporat</strong> Struktur informasi yang lebih rapi untuk tim internal dan calon klien.</li>
-        </ul>
+    <footer class="relative z-10 border-t border-slate-200/80 bg-white/80">
+      <div class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-6 text-sm text-slate-600">
+        <p>Cloudly. Rental layanan cloud untuk bisnis yang bergerak cepat.</p>
+        <span>2026</span>
       </div>
-
-      <div class="contact-card reveal">
-        <span class="eyebrow">Siap Mulai</span>
-        <h2>Siapkan halaman perusahaan yang lebih formal dan mudah dipercaya.</h2>
-        <p class="page-intro">Jika Anda ingin memperbarui citra digital perusahaan, kami bisa bantu dari struktur konten sampai tampilan akhir.</p>
-        <div class="link-row">
-          <a class="btn btn-primary" href="contact.html">Minta Penawaran</a>
-          <a class="btn btn-secondary" href="about.html">Tentang Kami</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer section-shell">
-    <p>UltraCompany. Solusi korporat yang formal, ringkas, dan siap dipakai untuk presentasi bisnis.</p>
-    <span>2026</span>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
